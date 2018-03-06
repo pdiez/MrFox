@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -79,6 +80,10 @@ public class MyLogin extends AppCompatActivity  {
                 attemptLogin();
             }
         });
+
+        TextView tv = (TextView) findViewById(R.id.idfont);
+        Typeface face=Typeface.createFromAsset(getAssets(),"amatic.ttf");
+        tv.setTypeface(face);
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);

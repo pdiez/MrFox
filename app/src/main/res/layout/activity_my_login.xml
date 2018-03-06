@@ -12,6 +12,14 @@
     tools:context="com.example.app.mrfox.MyLogin">
 
     <!-- Login progress -->
+    <TextView
+        android:id="@+id/idfont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mr Fox Login"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
